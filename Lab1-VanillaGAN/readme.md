@@ -16,7 +16,7 @@
 <br/>
 
 <div align='center'>
-    <b>VanillaGAN with FasionMNIST</b>
+    <b>FasionMNIST</b>
 </div>
 
 <br/>
@@ -30,7 +30,7 @@
 <br/>
 
 <div align='center'>
-    <b>VanillaGAN with Korean</b>
+    <b>Korean</b>
 </div>
 
 <br/>
