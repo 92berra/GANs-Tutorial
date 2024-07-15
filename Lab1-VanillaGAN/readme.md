@@ -22,7 +22,7 @@
 <br/>
 
 <div align='center'>
-    <img src='figures/result_1_v2.gif' width='500'/>
+    <img src='figures/result_1-4_reduced.gif' width='500'/>
 </div>
 
 <br/>
