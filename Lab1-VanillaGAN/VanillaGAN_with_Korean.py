@@ -95,10 +95,10 @@ print('Finished generating {} images.'.format(total_count))
 # Generate Font Image End
 
 # Hyperparameters
-NOISE = 100
+NOISE = 10
 INPUT_SIZE = 28*28
 BATCH_SIZE = 32
-EPOCHS = 1000000
+EPOCHS = 100
 
 # Datasets
 class CustomDataset(Dataset):

@@ -40,7 +40,7 @@ test_data = datasets.FashionMNIST(
 )
 
 # Hyperparameters
-NOISE = 100
+NOISE = 10
 INPUT_SIZE = 28 * 28
 BATCH_SIZE = 64
 EPOCHS = 100
