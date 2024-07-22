@@ -41,7 +41,9 @@ mps_device = torch.device("mps") if torch.backends.mps.is_available() else "cpu"
 print(f"mps is", "available" if torch.backends.mps.is_available() else "not available")
 ```
 
-# Verification Result
+<br/>
+
+# Result
 
 ```
 Python 3.9.19 (main, May  6 2024, 14:39:30) 
@@ -51,6 +53,7 @@ Scikit-Learn 1.4.2
 mps is available
 ```
 
+<br/>
 <br/>
 <br/>
 <br/>
