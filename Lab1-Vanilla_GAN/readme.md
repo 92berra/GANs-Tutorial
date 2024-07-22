@@ -1,11 +1,11 @@
-# Lab1: VanillaGAN
+# Lab1_Vanilla_GAN
 
 <br/>
 
 ## Lab Overview
 
 <div align='center'>
-    <img src='figures/overview.png' width='700'/>
+    <img src='figures/overview.png' width='600'/>
 </div>
 
 <br/>

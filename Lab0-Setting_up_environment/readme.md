@@ -24,6 +24,34 @@ python -m ipykernel install --user --name pytorch-mps --display-name "Python 3.9
 ```
 
 <br/>
+
+# Verification
+
+```
+import sys
+import torch
+import pandas as pd
+import sklearn as sk
+
+print(f"Python {sys.version}")
+print(f"Pandas {pd.__version__}")
+print(f"Scikit-Learn {sk.__version__}")
+
+mps_device = torch.device("mps") if torch.backends.mps.is_available() else "cpu"
+print(f"mps is", "available" if torch.backends.mps.is_available() else "not available")
+```
+
+# Verification Result
+
+```
+Python 3.9.19 (main, May  6 2024, 14:39:30) 
+[Clang 14.0.6 ]
+Pandas 2.2.2
+Scikit-Learn 1.4.2
+mps is available
+```
+
+<br/>
 <br/>
 <br/>
 
