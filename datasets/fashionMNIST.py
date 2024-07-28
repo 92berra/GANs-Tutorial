@@ -1,5 +1,4 @@
 from torchvision import datasets
-from torchvision.transforms import ToTensor
 from torchvision.transforms import ToTensor, Lambda
 import torch
 

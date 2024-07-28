@@ -10,19 +10,19 @@
 
 <br/>
 
-<li><b>Input</b> : 10 dimensional noise</li>
-<li><b>Generator</b></li>
-<li><b>Discriminator</b></li>
-<li><b>Loss</b></li>
+<li><b>Input</b>: 10 dimensional noise</li>
+<li><b>Generator</b>: Input is above noise value.</li>
+<li><b>Discriminator</b>: Input is input size as you defined (eg. 28x28, 256x256, etc).</li>
+<li><b>Loss</b>: BCELoss</li>
+<li><b>Generator optimizer</b>: Adam</li>
+<li><b>Discriminator optimizer</b>: Adam</li>
 
 <br/>
 <br/>
 
 ## Datasets 
 
-<li><b>FashionMNIST</b>: </li>
-<li><b>Korean Font</b>: In progress ... </li>
-<li><b>Custom</b>: In progress ... </li>
+<li>FashionMNIST</li>
 
 <br/>
 <br/>
