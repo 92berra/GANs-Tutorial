@@ -3,9 +3,9 @@ import argparse, glob, io, os
 
 from PIL import Image, ImageFont, ImageDraw
 
-DEFAULT_LABEL_FILE = 'characters/50characters.txt'
+DEFAULT_LABEL_FILE = 'characters/korean.txt'
 DEFAULT_FONTS_DIR = 'fonts/source'
-DEFAULT_OUTPUT_DIR = '2_DCGAN/datasets'
+DEFAULT_OUTPUT_DIR = 'images/source'
 
 IMAGE_WIDTH = 256
 IMAGE_HEIGHT = 256

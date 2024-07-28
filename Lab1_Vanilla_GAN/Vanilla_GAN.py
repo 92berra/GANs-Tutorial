@@ -25,17 +25,17 @@ os.makedirs(loss_dir, exist_ok=True)
 
 # Datasets
 training_data = datasets.FashionMNIST(
-    root='data/target/1',
+    root='data/1',
     train=True,
-    download=False,
+    download=True,
     transform=ToTensor(),
     target_transform=Lambda(lambda y: torch.zeros(10, dtype=torch.float).scatter_(0, torch.tensor(y), value=1))
 )
 
 test_data = datasets.FashionMNIST(
-    root='data/target/1',
+    root='data/1',
     train=False,
-    download=False,
+    download=True,
     transform=ToTensor()
 )
 
