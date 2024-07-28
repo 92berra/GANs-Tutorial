@@ -13,8 +13,6 @@ For this tutorial, you can train using Macbook GPU(mps).
 
 # Setting up environment
 
-<br/>
-
 ### Environment
 - M3 Macbook Pro 
 - macOS Sonoma 14.5
@@ -60,7 +58,7 @@ print(f"mps is", "available" if torch.backends.mps.is_available() else "not avai
 
 <br/>
 
-# Result
+### Varification result
 
 ```
 Python 3.9.19 (main, May  6 2024, 14:39:30) 
