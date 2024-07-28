@@ -5,7 +5,7 @@
 ## Lab Overview
 
 <div align='center'>
-    <img src='figures/overview.png' width='600'/>
+    <img src='../figures/overview.png' width='600'/>
 </div>
 
 <li><b>Input</b> : 10 dimensional noise</li>
@@ -27,7 +27,7 @@
 <br/>
 
 <div align='center'>
-    <img src='figures/result_1-4_reduced.gif' width='500'/>
+    <img src='../figures/result_1-4_reduced.gif' width='500'/>
 </div>
 
 <br/>
@@ -41,7 +41,7 @@
 <br/>
 
 <div align='center'>
-    <img src='figures/result_2-2_reduced.gif' width='500'/>
+    <img src='../figures/result_2-2_reduced.gif' width='500'/>
 </div>
 
 <br/>
