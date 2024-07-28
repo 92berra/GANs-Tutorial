@@ -18,6 +18,31 @@
 <br/>
 <br/>
 
+## Datasets 
+
+<li><b>FashionMNIST</b>: </li>
+<li><b>Korean Font</b>: In progress ... </li>
+<li><b>Custom</b>: In progress ... </li>
+
+<br/>
+<br/>
+
+## How to train
+
+```
+python VanillaGAN.py --noise --input_size --batch_size --epochs --model_dir --images_dir --loss_dir
+```
+- <b>noise</b> Define noise value
+- <b>input_size</b> Define input size eg. 28x28, 256x256, ...
+- <b>batch_size</b> Define bacth size eg. 32, 64, 128, ...
+- <b>epochs</b> Define training epochs value
+- <b>model_dir</b> Directory to save checkpoint
+- <b>images_dir</b> Directory to save generated images
+- <b>loss_dir</b> Directory to save loss output
+
+<br/>
+<br/>
+
 ## Result
 
 <br/>
