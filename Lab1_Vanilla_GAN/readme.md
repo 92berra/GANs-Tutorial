@@ -8,6 +8,8 @@
     <img src='../figures/overview.png' width='600'/>
 </div>
 
+<br/>
+
 <li><b>Input</b> : 10 dimensional noise</li>
 <li><b>Generator</b></li>
 <li><b>Discriminator</b></li>
