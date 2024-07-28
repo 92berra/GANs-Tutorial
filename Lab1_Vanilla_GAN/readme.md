@@ -30,7 +30,7 @@
 ## How to train
 
 ```
-python VanillaGAN.py --noise --input_size --batch_size --epochs --model_dir --images_dir --loss_dir
+python VanillaGAN.py --noise 10 --input_size 28x28 --batch_size 64 --epochs 100 --model_dir result/model --images_dir result/images --loss_dir result/loss
 ```
 - <b>noise</b> Define noise value
 - <b>input_size</b> Define input size eg. 28x28, 256x256, ...
@@ -71,6 +71,7 @@ python VanillaGAN.py --noise --input_size --batch_size --epochs --model_dir --im
     <img src='../figures/result_2-2_reduced.gif' width='500'/>
 </div>
 
+<br/>
 <br/>
 <br/>
 <br/>
