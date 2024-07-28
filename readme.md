@@ -11,7 +11,11 @@ For this tutorial, you can train using Macbook GPU(mps).
 
 <br/>
 
-# Environment
+# Setting up environment
+
+<br/>
+
+### Environment
 - M3 Macbook Pro 
 - macOS Sonoma 14.5
 - VSCode 1.90.2 (Universal)
@@ -19,14 +23,14 @@ For this tutorial, you can train using Macbook GPU(mps).
 
 <br/>
 
-# Install Python and PyTorch
+### Install Python and PyTorch
 
 - Python 3.9
 - PyTorch 2.3.1
 
 <br/>
 
-# Example
+### Example
 
 ```
 conda create pytorch-mps python=3.9
@@ -38,7 +42,7 @@ python -m ipykernel install --user --name pytorch-mps --display-name "Python 3.9
 
 <br/>
 
-# Verification
+### Verification
 
 ```
 import sys
