@@ -159,7 +159,7 @@ def train(training_data, noise, input_size, batch_size, epochs, model_dir, image
     g_losses = []
 
     for epoch in range(1, epochs + 1):
-        for i, (real_images, _) in enumerate(train_loader):
+        for (real_images, _) in enumerate(train_loader):
 
             batch_size = real_images.size(0)
             real_images = real_images.view(batch_size, -1).to(device)
