@@ -5,6 +5,7 @@
 
 datasets/FashionMNIST
 datasets/fonts/
+datasets/celeba
 
 result
 */result
