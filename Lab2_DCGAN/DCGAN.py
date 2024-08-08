@@ -338,7 +338,6 @@ if __name__ == '__main__':
     parser.add_argument('--model_dir', type=str, dest='model_dir', default=DEFAULT_MODEL_DIR)
     parser.add_argument('--images_dir', type=str, dest='images_dir', default=DEFAULT_IMAGES_DIR)
     parser.add_argument('--loss_dir', type=str, dest='loss_dir', default=DEFAULT_LOSS_DIR)
-
     args = parser.parse_args()
     
     train(args.dataset_dir, args.workers, args.batch_size, args.image_size, args.nc, args.nz, args.ngf, args.ndf, args.epochs, args.learning_rate, args.beta1, args.ngpu, args.model_dir, args.images_dir, args.loss_dir)
