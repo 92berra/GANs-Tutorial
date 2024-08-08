@@ -32,7 +32,7 @@ NC = 3 # Number of Channel, RGB is 3
 NZ = 100 # Size of latency space(input of generator)
 NGF = 64 # Size of feature data pass through G
 NDF = 64 # Size of feature data pass through D
-EPOCHS = 5 # Number of epoch
+EPOCHS = 100 # Number of epoch
 LEARNING_RATE = 0.0002 # Learning rate of optimizer 
 BETA1 = 0.5 # beta1 Hypterparameter of Adam optimizer
 NGPU = 1 # Number of GPU. If cpu, text 0.
@@ -44,25 +44,31 @@ class Generator(nn.Module):
         super(Generator, self).__init__()
         self.ngpu = ngpu
         self.main = nn.Sequential(
+            
             # 입력데이터 Z가 가장 처음 통과하는 전치 합성곱 계층입니다.
             nn.ConvTranspose2d( NZ, NGF * 8, 4, 1, 0, bias=False),
             nn.BatchNorm2d(NGF * 8),
             nn.ReLU(True),
+            
             # 위의 계층을 통과한 데이터의 크기. ``(ngf*8) x 4 x 4``
             nn.ConvTranspose2d(NGF * 8, NGF * 4, 4, 2, 1, bias=False),
             nn.BatchNorm2d(NGF * 4),
             nn.ReLU(True),
+            
             # 위의 계층을 통과한 데이터의 크기. ``(NGF*4) x 8 x 8``
             nn.ConvTranspose2d( NGF * 4, NGF * 2, 4, 2, 1, bias=False),
             nn.BatchNorm2d(NGF * 2),
             nn.ReLU(True),
+            
             # 위의 계층을 통과한 데이터의 크기. ``(ngf*2) x 16 x 16``
             nn.ConvTranspose2d( NGF * 2, NGF, 4, 2, 1, bias=False),
             nn.BatchNorm2d(NGF),
             nn.ReLU(True),
+            
             # 위의 계층을 통과한 데이터의 크기. ``(ngf) x 32 x 32``
             nn.ConvTranspose2d( NGF, NC, 4, 2, 1, bias=False),
             nn.Tanh()
+            
             # 위의 계층을 통과한 데이터의 크기. ``(nc) x 64 x 64``
         )
     def forward(self, input):

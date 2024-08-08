@@ -1,4 +1,4 @@
-# Lab1_Vanilla_GAN
+# Lab1 Vanilla GAN
 
 <br/>
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-<li><b>Input</b>: 10 dimensional noise</li>
+<li><b>Input</b>: 100 dimensional noise</li>
 <li><b>Generator</b>: Input is above noise value.</li>
 <li><b>Discriminator</b>: Input is input size as you defined (eg. 28x28, 256x256, etc).</li>
 <li><b>Loss</b>: BCELoss</li>
