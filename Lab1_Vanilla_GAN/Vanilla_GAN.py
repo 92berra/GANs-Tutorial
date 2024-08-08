@@ -2,7 +2,11 @@ from torchvision.transforms import ToTensor, Lambda
 from torch.utils.data import DataLoader
 from torchvision import datasets
 import matplotlib.pyplot as plt
-import torch.nn as nn, torch.optim as optim, numpy as np, torch, argparse, os
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+import torch
+import argparse, os
 
 
 # MPS
@@ -35,7 +39,7 @@ class Generator(nn.Module):
     
     def forward(self, z):
         img = self.model(z)
-        img = img.view(img.size(0), 1, 28, 28)  # reshape to (batch_size, 1, 28, 28)
+        img = img.view(img.size(0), 1, 28, 28) # reshape to (batch_size, 1, 28, 28)
         return img
     
     
@@ -136,7 +140,7 @@ def train(training_data, noise, input_size, batch_size, epochs, model_dir, image
         plt.close()
 
 
-    # Generate Model
+    # Create generator, discriminator
     generator = Generator(noise).to(device)
     discriminator = Discriminator(input_size).to(device)
 
@@ -149,15 +153,16 @@ def train(training_data, noise, input_size, batch_size, epochs, model_dir, image
     for param in discriminator.parameters():
         param.requires_grad = False
 
-    gan_input = torch.randn(batch_size, noise).to(device)
-    x = generator(gan_input)
-    output = discriminator(x)
+    #gan_input = torch.randn(batch_size, noise).to(device)
+    #x = generator(gan_input)
+    #output = discriminator(x)
 
 
     # Train
     d_losses = []
     g_losses = []
 
+    # Iterate
     for epoch in range(1, epochs + 1):
         for (real_images, _) in enumerate(train_loader):
 
