@@ -5,7 +5,7 @@
 ## Lab Overview 
 
 <div align='center'>
-    <img src='../figures/Lab2_overview.png' width='600' />
+    <img src='../figures/Lab2_overview_v2.png' width='800' />
 </div>
 
 <br/>

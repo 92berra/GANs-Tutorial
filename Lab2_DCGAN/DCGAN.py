@@ -11,7 +11,6 @@ import os, argparse
 import matplotlib.pyplot as plt
 
 
-
 # MPS
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 print(f"{device} is available.")
